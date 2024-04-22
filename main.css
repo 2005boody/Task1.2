@@ -1,0 +1,141 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.left {
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  border-radius: 10%;
+  background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  color: #fff;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  color: #fff;
+  font-size: 2rem;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.score {
+  margin: 0;
+  padding-top: 15%;
+}
+.right{
+    background-color: #fff;
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.sum{
+  padding: 2%;
+  font-weight: bolder;
+  align-self: normal;
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: rgb(229, 191, 191);
+    width: 90%;
+}
+.two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: rgb(229, 213, 191);
+    width: 90%;
+}
+.three{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: rgb(199, 229, 191);
+    width: 90%;
+}
+.four{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 30px;
+    background-color: rgb(191, 192, 229);
+    width: 90%;
+}
+.reaction{
+    color: rgba(255, 0, 0, 0.694);
+}
+.memmory{
+    color: rgba(255, 217, 0, 0.736);
+}
+.verbal{
+    color: rgba(12, 194, 12, 0.766);
+}
+.visual{
+    color: rgba(0, 0, 255, 0.702);
+}
+button{
+  border-radius: 50px;
+  height: 40px;
+  width: 90%;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+@media(max-width: 470px){
+  .left{
+    width: 100%;
+  }
+  .right{
+    display: none;
+  }
+  .left + .right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
